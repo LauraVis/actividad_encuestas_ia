@@ -1,38 +1,131 @@
-.App {
+.survey-list {
+  flex-wrap: wrap;
+}
+
+.survey-list h1 {
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: #ffffff;
+  background: #ffffff;
+  text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5,
+    -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5,
+    -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.survey-item {
+  flex: 1;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+  transition: transform 0.2s;
+  list-style-type: none;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.survey-pregunta {
+  flex: 1;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+  transition: transform 0.2s;
+  list-style-type: none;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.survey-id{
+  list-style-type: none;
 }
 
-.App-link {
-  color: #61dafb;
+.survey-item:hover {
+  transform: translateY(-5px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.survey-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.survey-item {
+  font-size: 14px;
+}
+
+.survey-item a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.link-create-survey {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.link-create-survey:hover {
+  color: blue;
+}
+/* Estilo para el formulario de creación de encuesta */
+.create-survey {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.title {
+  color: #ffffff;
+  background: #ffffff;
+  text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5,
+    -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5,
+    -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea,
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
 }
